@@ -25,8 +25,8 @@ def generate_batch_completion(
     generated_ids = model.generate(
         **inputs,
         use_cache=True,
-        max_new_tokens=512,
-        temperature=0.2,
+        max_new_tokens=256,
+        temperature=0.1,
         top_p=0.95,
         do_sample=True,
         eos_token_id=tokenizer.eos_token_id,

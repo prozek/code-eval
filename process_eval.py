@@ -13,6 +13,7 @@ parser.add_argument("--add_prompt", action="store_true", help="")
 args = parser.parse_args()
 
 
+
 files = sorted(glob.glob(args.path + "/*.jsonl"))
 print("{} files in {}".format(len(files), args.path))
 
